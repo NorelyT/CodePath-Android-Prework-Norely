@@ -16,10 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        
+        // List that allows the program to iterate over the images
         val imageList = arrayOf<ImageView>(findViewById(R.id.axolotl),
             findViewById(R.id.prairieDog), findViewById(R.id.snek))
 
+        
+        // Whenever the button is pressed, it shows the next image after the currently
+        // displaying image and updates the text label, button text, and button colors
+        // depending on the picture
         findViewById<Button>(R.id.changeAnimalButton).setOnClickListener(){
             val textViewRef = findViewById<TextView>(R.id.textView)
             val replyButtonRef = findViewById<Button>(R.id.replyButton)
@@ -59,13 +64,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        
+        // Displays a unique Toast message for each image
         findViewById<Button>(R.id.replyButton).setOnClickListener(){
-
-//            var string1 = "Hi I'm Davide, I know I look dumb but I'm also cute! Say hello! " +
-//                    "Hello to you too! Hey! I'm Oafy and I definitely ate too much last " +
-//                    "winter. Feed the oaf!  Om-nom-nom   Hewo, I'm Snek and I'm always ready " +
-//                    "for a hooman boop! Boop the snoot! Boop has successfully landed!"
-
             var displayString = ""
             if (imageList[0].alpha == 1F) {
                 displayString = "Hello to you too!"
