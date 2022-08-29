@@ -16,7 +16,6 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
 * [x] Added different images
 * [x] Each image has it's own unique introduction and Toast message
 * [x] Each Button's theme corresponds to its current image 
