@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/changeAnimalButton"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="Change Animal"
+        android:textSize="11sp"
+        android:textColor="@color/light_pink"
+        android:backgroundTint="@color/deep_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/axolotl"
+        android:layout_width="289dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeAnimalButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/axolotl" />
+
+    <ImageView
+        android:id="@+id/prairieDog"
+        android:layout_width="289dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeAnimalButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/prairie_dog" />
+
+    <ImageView
+        android:id="@+id/snek"
+        android:layout_width="289dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeAnimalButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/snek" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="56dp"
+        android:text="Hi I'm Davide, I know I look dumb but I'm also cute!"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/replyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/replyButton"
+        android:layout_width="231dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="84dp"
+        android:text="Say Hello!"
+        android:textSize="19sp"
+        android:textColor="@color/light_pink"
+        android:backgroundTint="@color/deep_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
